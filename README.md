@@ -520,10 +520,6 @@ These resources provide comprehensive information on Elasticsearch features, con
 : https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html
 : https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-body.html
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/189452/62173517-9f71-4307-82b9-85eb306f3744/paste.txt
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/189452/62173517-9f71-4307-82b9-85eb306f3744/paste.txt
 
 
 To understand the differences between `PUT` and `POST` methods in the context of Elasticsearch, and how the update operation varies when using these methods, here is a detailed explanation:
@@ -670,9 +666,6 @@ kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I 
 
 This workflow demonstrates how to create a document using `PUT`, update it using both `PUT` and the `_update` endpoint with `POST`, and verify the updates.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/189452/32c8ee9c-d1d5-476c-be49-e9a1391302af/paste.txt
-
 
 When updating a document in Elasticsearch, it's crucial to understand the differences between using `PUT` and `POST` methods, especially when it comes to partial updates.
 
@@ -723,9 +716,6 @@ kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I 
 ```
 
 This way, you ensure that only the `price` field is updated, and the rest of the document remains intact.
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/189452/32c8ee9c-d1d5-476c-be49-e9a1391302af/paste.txt
 
 
 How you can use Kibana's Dev Tools and Index Management for Elasticsearch operations:
