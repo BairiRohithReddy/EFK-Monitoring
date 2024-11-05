@@ -208,7 +208,7 @@ kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I 
 
 ### Example Workflow for Deleting Documents and Indexes
 
-Here is how you can include these operations in your workflow:
+Here is how we can include these operations in our workflow:
 
 ```bash
 CLUSTER_IP=$(kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}')
@@ -280,25 +280,18 @@ kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I 
 kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I {} curl -X DELETE "http://{}:9200/products"
 ```
 
-### Additional Notes
+### Additional Information
 
 - **Deleting Documents**: When deleting a document, ensure that the document exists before attempting to delete it to avoid errors.
 - **Deleting Indexes**: Deleting an index will remove all documents and settings associated with that index. Use this operation with caution.
 
-By including these steps in your documentation, you ensure that all CRUD operations, including deletion, are well-documented and easily reproducible.
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/189452/32c8ee9c-d1d5-476c-be49-e9a1391302af/paste.txt
-
-### Additional Information
-
 #### Retrieving All Documents
 
-If you need to retrieve all documents from an index, you can use the Scroll API or the Search API with pagination.
+If we need to retrieve all documents from an index, we can use the Scroll API or the Search API with pagination.
 
 ##### Using the Scroll API
 
-The Scroll API allows you to retrieve large numbers of documents efficiently by creating a snapshot of the index.
+The Scroll API allows us to retrieve large numbers of documents efficiently by creating a snapshot of the index.
 
 ```bash
 kubectl get svc elasticsearch -n efk -o jsonpath='{.spec.clusterIP}' | xargs -I {} curl -X GET "http://{}:9200/products/_search?scroll=1m&size=1000" -H 'Content-Type: application/json' -d '{
@@ -492,11 +485,11 @@ If a document is not found, verify that the document ID is correct and that the 
 curl -X GET "http://$CLUSTER_IP:9200/products/_doc/1"
 ```
 
-If the document does not exist, you may need to add it or check the ID.
+If the document does not exist, we may need to add it or check the ID.
 
 #### Search Query Issues
 
-If your search queries are not returning the expected results, check the query syntax and ensure that the fields and terms are correct.
+If our search queries are not returning the expected results, check the query syntax and ensure that the fields and terms are correct.
 
 ```bash
 curl -X GET "http://$CLUSTER_IP:9200/products/_search" -H 'Content-Type: application/json' -d '{
@@ -823,7 +816,7 @@ How you can use Kibana's Dev Tools and Index Management for Elasticsearch operat
 
 - **Index Creation and Deletion**: Use Index Management for creating and deleting indexes through a graphical interface.
 - **Index Settings**: Use Index Management to view and edit index settings in a more user-friendly way.
-- **Index Monitoring**: Use Index Management to monitor the health and status of your indexes.
+- **Index Monitoring**: Use Index Management to monitor the health and status of our indexes.
 
 ### Example Workflow Using Kibana
 
@@ -872,5 +865,5 @@ Here is an example of how we can use both Dev Tools and Index Management in Kiba
 2. Find the index you want to delete.
 3. Click on the delete button.
 
-By using both Dev Tools and Index Management in Kibana, we can leverage the strengths of each tool to manage and interact with your Elasticsearch data efficiently.
+By using both Dev Tools and Index Management in Kibana, we can leverage the strengths of each tool to manage and interact with our Elasticsearch data efficiently.
 
