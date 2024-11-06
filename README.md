@@ -857,3 +857,4 @@ Here is an example of how we can use both Dev Tools and Index Management in Kiba
 
 By using both Dev Tools and Index Management in Kibana, we can leverage the strengths of each tool to manage and interact with our Elasticsearch data efficiently.
 
+- [Next] (https://github.com/BairiRohithReddy/EFK-Monitoring/blob/main/endpoints_elasticsearch.md)
