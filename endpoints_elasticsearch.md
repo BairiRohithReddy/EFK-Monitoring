@@ -207,9 +207,9 @@ These APIs provide a more human-readable output for various cluster and index me
 By understanding and utilizing these endpoints, you can effectively manage your Elasticsearch cluster, perform CRUD operations, and execute complex search queries.
 
 Citations:
-[1] https://opster.com/guides/elasticsearch/search-apis/elasticsearch-endpoints/
-[2] https://www.dotcms.com/docs/latest/elasticsearch-rest-api
-[3] https://dev.to/elastic/performing-crud-operations-with-elasticsearch-kibana-50ka
+  1. https://opster.com/guides/elasticsearch/search-apis/elasticsearch-endpoints/
+  2. https://www.dotcms.com/docs/latest/elasticsearch-rest-api
+  3. https://dev.to/elastic/performing-crud-operations-with-elasticsearch-kibana-50ka
 [4] https://python.plainenglish.io/beginners-guide-to-crud-with-elasticsearch-python-62ed07477a65?gi=97d8f25224d9
 [5] https://logz.io/blog/elasticsearch-api/
 [6] https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html
