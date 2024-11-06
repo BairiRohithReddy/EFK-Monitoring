@@ -1,4 +1,4 @@
-To document all the endpoints available in Elasticsearch, here is a comprehensive overview categorized by the main types of APIs: Cluster APIs, Index APIs, Document APIs, and Search APIs.
+Here is a comprehensive overview of endpoints available in ElasticSearch categorized by the main types of APIs: Cluster APIs, Index APIs, Document APIs, and Search APIs.
 
 ## Cluster APIs
 
