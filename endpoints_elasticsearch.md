@@ -213,5 +213,9 @@ Citations:
   4. https://python.plainenglish.io/beginners-guide-to-crud-with-elasticsearch-python-62ed07477a65?gi=97d8f25224d9
   5. https://logz.io/blog/elasticsearch-api/
   6. https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html
-  7. https://www.elastic.co/guide/en/cloud/current/ec-work-with-apis.html
-  8. https://www.digitalocean.com/community/tutorials/how-to-interact-with-data-in-elasticsearch-using-crud-operations
+   
+- [Prev](https://github.com/BairiRohithReddy/EFK-Monitoring/blob/main/README.md)
+- [Next](https://github.com/BairiRohithReddy/EFK-Monitoring/blob/main/put%20vs%20post.md)
+  
+  8. https://www.elastic.co/guide/en/cloud/current/ec-work-with-apis.html
+  9. https://www.digitalocean.com/community/tutorials/how-to-interact-with-data-in-elasticsearch-using-crud-operations
